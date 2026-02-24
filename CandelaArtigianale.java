@@ -7,12 +7,10 @@ public class CandelaArtigianale extends ProduzioneCandela {
         this.numeroStampi = numeroStampi;
     }
 
-    @Override
     public double calcolaEfficienza() {
         return pesoCera / tempoProduzione;
     }
 
-    @Override
     public void descrizioneProduzione() {
        super.descrizioneProduzione();
        System.out.println("Numero stampi: " + numeroStampi);
