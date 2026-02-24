@@ -1,20 +1,20 @@
-public class CandelaArtigianale {
+public class CandelaArtigianale extends ProduzioneCandela {
 
-    String tipoCera;
-    double pesoCera, tempoProduzione;
     int numeroStampi;
 
     public CandelaArtigianale(String tipoCera, double pesoCera, double tempoProduzione, int numeroStampi) {
-        this.tipoCera = tipoCera;
-        this.pesoCera = pesoCera;
-        this.tempoProduzione = tempoProduzione;
+        super(tipoCera, pesoCera, tempoProduzione);
         this.numeroStampi = numeroStampi;
     }
 
+    @Override
+    public double calcolaEfficienza() {
+        return pesoCera / tempoProduzione;
+    }
+
+    @Override
     public void descrizioneProduzione() {
-       System.out.println("Tipo cera: " + tipoCera);
-       System.out.println("Peso cera (g): " + pesoCera);
-       System.out.println("Tempo produzione (min): " + tempoProduzione);
+       super.descrizioneProduzione();
        System.out.println("Numero stampi: " + numeroStampi);
    }
 }
