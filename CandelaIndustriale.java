@@ -14,4 +14,5 @@ public class CandelaIndustriale extends ProduzioneCandela {
     public void descrizioneProduzione() {
        super.descrizioneProduzione();
        System.out.println("Livello automazione: " + livelloAutomazione);
+    }
 }
