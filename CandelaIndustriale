@@ -1,0 +1,17 @@
+public class CandelaIndustriale extends ProduzioneCandela {
+    
+    protected int livelloAutomazione; 
+    
+    public CandelaIndustriale(String tipoCera, double pesoCera, double tempoProduzione, int livelloAutomazione) {
+        // inizializzo campi protetti senza invocare super
+        this.tipoCera = tipoCera;
+        this.pesoCera = pesoCera;
+        this.tempoProduzione = tempoProduzione;
+        this.livelloAutomazione = livelloAutomazione;
+    }
+    
+    @Override
+    public double calcolaEfficienza() {
+        return (pesoCera / tempoProduzione) * livelloAutomazione;
+    }
+}
