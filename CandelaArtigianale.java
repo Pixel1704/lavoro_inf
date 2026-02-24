@@ -1,6 +1,6 @@
 public class CandelaArtigianale extends ProduzioneCandela {
 
-    int numeroStampi;
+    protected int numeroStampi;
 
     public CandelaArtigianale(String tipoCera, double pesoCera, double tempoProduzione, int numeroStampi) {
         super(tipoCera, pesoCera, tempoProduzione);
