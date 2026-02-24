@@ -10,7 +10,6 @@ public class CandelaIndustriale extends ProduzioneCandela {
         this.livelloAutomazione = livelloAutomazione;
     }
     
-    @Override
     public double calcolaEfficienza() {
         return (pesoCera / tempoProduzione) * livelloAutomazione;
     }
